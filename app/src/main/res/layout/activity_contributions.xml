@@ -1,0 +1,117 @@
+<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_animated_discroll_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:id="@+id/discroll_view_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="Scroll Down to see"
+            android:textColor="@android:color/black"
+            android:textSize="68sp"
+            tools:visibility="gone" />
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:gravity="center"
+
+            android:text="Developers..."
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            tools:visibility="gone" />
+
+
+        <View
+            android:id="@+id/animated_custom_view_color"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_fromBgColor="#3cac32"
+            discrollve:discrollve_threshold="0.3"
+            discrollve:discrollve_toBgColor="#0869a6" />
+
+        <ImageView
+            android:id="@+id/animated_imageview_images"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/sheet"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft|fromBottom" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mansi"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true" />
+
+
+        <View
+            android:id="@+id/animated_color"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            discrollve:discrollve_fromBgColor="#ac7b32"
+            discrollve:discrollve_toBgColor="#7b1d1d" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/justin"
+            discrollve:discrollve_translation="fromRight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Show and Hide Android Views: TextView, ImageView, CustomView, Buttons etc with animation effect."
+            android:textSize="18sp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromBottom" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/rohit"
+            discrollve:discrollve_scaleX="true"
+            discrollve:discrollve_scaleY="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_fromBgColor="#3cac32"
+            discrollve:discrollve_threshold="0.3"
+            discrollve:discrollve_toBgColor="#0869a6" />
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>
